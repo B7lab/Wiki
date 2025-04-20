@@ -202,11 +202,203 @@
  
 
 
+
+  <!-- Markdown -->
+
+
+<div id="green">
+  <h1>Markdown</h1>
+  <section id="MdHeadings" class="mt-4">  
+   
+    <pre><code class="language-markdown">Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</code></pre>
+    <br><br>
+    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
+
+    <pre><code class="language-markdown">**Fett** und *Kursiv*</code></pre>
+    <br><br>
+    <p><strong>Fett</strong> und <em>Kursiv</em></p>
+
+    <pre><code class="language-markdown">~~Durchgestrichen~~</code></pre>
+    <br><br>
+    <p><del>Durchgestrichen</del></p>
+
+    <h2>Listen</h2>
+    <pre><code class="language-markdown">- Punkt 1
+    - Punkt 2
+      - Unterpunkt</code></pre>
+    <br><br>
+    <ul>
+      <li>Punkt 1</li>
+      <li>Punkt 2
+        <ul>
+          <li>Unterpunkt</li>
+        </ul>
+      </li>
+    </ul>
+
+    <pre><code class="language-markdown">1. Erster
+    2. Zweiter
+    3. Dritter</code></pre>
+    <br><br>
+    <ol>
+      <li>Erster</li>
+      <li>Zweiter</li>
+      <li>Dritter</li>
+    </ol>
+
+    <pre><code class="language-markdown">[OpenAI](https://openai.com)</code></pre>
+    <br><br>
+    <p><a href="https://openai.com">OpenAI</a></p>
+
+    <pre><code class="language-markdown">![Alt Text](https://via.placeholder.com/100)</code></pre>
+    <br><br>
+    <img src="https://via.placeholder.com/100" alt="Alt Text">
+
+    <pre><code class="language-markdown">`Inline Code`</code></pre>
+    <br><br>
+    <p><code>Inline Code</code></p>
+
+    <pre><code class="language-markdown">```
+    Mehrzeiliger Codeblock
+    mit Inhalt
+    ```</code></pre>
+    <br><br>
+    <pre><code>Mehrzeiliger Codeblock
+    mit Inhalt
+    </code></pre>
+
+    <pre><code class="language-markdown">> Dies ist ein Blockzitat</code></pre>
+    <br><br>
+    <blockquote>Dies ist ein Blockzitat</blockquote>
+
+    <pre><code class="language-markdown">---
+    Horizontale Linie</code></pre>
+    <br><br>
+    <hr>
+    <p>Horizontale Linie</p>
+
+    <pre><code class="language-markdown">- [x] Erledigt
+    - [ ] Offen</code></pre>
+    <br><br>
+    <ul>
+      <li><input type="checkbox" checked disabled> Erledigt</li>
+      <li><input type="checkbox" disabled> Offen</li>
+    </ul>
+
+  <section id="MdHeadings" class="mt-4">
+    <h2>Überschriften</h2>
+    <pre><code class="language-markdown">
+      # Überschrift 1
+      ## Überschrift 2
+      ### Überschrift 3
+      #### Überschrift 4
+      ##### Überschrift 5
+      ###### Überschrift 6
+    </code></pre>
+    <h1>Überschrift 1</h1> 
+    <h2>Überschrift 2</h2> 
+    <h3>Überschrift 3</h3> 
+    <h4>Überschrift 4</h4> 
+    <h5>Überschrift 5</h5> 
+    <h6>Überschrift 6</h6> 
+  </section>
+
+  <section id="MdParagraphs" class="mt-4">
+    <h2>Paragraphen</h2>
+    <pre><code class="language-markdown">
+      Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.
+      Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.  
+    </code></pre>
+    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
+    <p>Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.</p>
+  </section>
+
+  <section id="MdLists" class="mt-4">
+    <h2>Listen</h2>
+    <pre><code class="language-markdown">
+    - Liste 1
+      - Unterliste 1.1
+      - Unterliste 1.2
+    - Liste 2
+      - Unterliste 2.1
+      - Unterliste 2.2
+    1. Nummerierte Liste 1
+       1. Unterliste 1.1
+       2. Unterliste 1.2
+    2. Nummerierte Liste 2
+       1. Unterliste 2.1
+       2. Unterliste 2.2
+    </code></pre> 
+    <ul>
+      <li>Liste 1
+        <ul>
+          <li>Unterliste 1.1</li>
+          <li>Unterliste 1.2</li>
+        </ul>
+      </li>
+      <li>Liste 2
+        <ul>
+          <li>Unterliste 2.1</li>
+          <li>Unterliste 2.2</li>
+        </ul>
+      </li> 
+    </ul>
+    <ol>
+      <li>Nummerierte Liste 1
+        <ol>
+          <li>Unterliste 1.1</li>
+          <li>Unterliste 1.2</li>
+        </ol>
+      </li>
+      <li>Nummerierte Liste 2
+        <ol>
+          <li>Unterliste 2.1</li>
+          <li>Unterliste 2.2</li>
+        </ol>
+      </li>
+    </ol>
+  </section>
+
+  <section id="MdCode" class="mt-4">
+    <h2>Code</h2>
+    <pre><code class="language-markdown">
+      `Inline Code`
+      ```python
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      ```
+    </code></pre>
+    <p><code>Inline Code</code></p>
+    <pre><code class="language-python">
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      </code></pre> 
+  </section>
+
+  <section id="MdLinks" class="mt-4">
+    <h2>Hyperlinks</h2>
+    <pre><code class="language-markdown">
+      [Linktext](https://example.com)
+    </code></pre>
+    <p><a href="https://example.com">Linktext</a></p>
+  </section>
+
+  <section id="MdImages" class="mt-4">
+    <h2>Bilder</h2>
+    ![Alt-Text](https://example.com/image.jpg)
+    <img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"><br><br>
+    <p><img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"></p>
+  </section>
+</div>
+
+<br><hr><br>
+<div style="height: 150px;"></div>
+
 <!-- HTML -->
 
 
 <div id="blue">
-  <h1>HTML5 - Semantik</h1>
+  <h1>HTML5</h1>
   <section id="headings" class="mt-4">
     <h4>Überschriften</h4><br><br><br>
     <pre><code class="language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre><h1>Heading 1</h1><br>
@@ -531,198 +723,6 @@
 <div style="height: 150px;"></div>
 
 <br><hr><br>
-
-
-  <!-- Markdown -->
-
-
-<div id="green">
-  <h1>Markdown</h1>
-  <section id="MdHeadings" class="mt-4">  
-   
-    <pre><code class="language-markdown">Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</code></pre>
-    <br><br>
-    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
-
-    <pre><code class="language-markdown">**Fett** und *Kursiv*</code></pre>
-    <br><br>
-    <p><strong>Fett</strong> und <em>Kursiv</em></p>
-
-    <pre><code class="language-markdown">~~Durchgestrichen~~</code></pre>
-    <br><br>
-    <p><del>Durchgestrichen</del></p>
-
-    <h2>Listen</h2>
-    <pre><code class="language-markdown">- Punkt 1
-    - Punkt 2
-      - Unterpunkt</code></pre>
-    <br><br>
-    <ul>
-      <li>Punkt 1</li>
-      <li>Punkt 2
-        <ul>
-          <li>Unterpunkt</li>
-        </ul>
-      </li>
-    </ul>
-
-    <pre><code class="language-markdown">1. Erster
-    2. Zweiter
-    3. Dritter</code></pre>
-    <br><br>
-    <ol>
-      <li>Erster</li>
-      <li>Zweiter</li>
-      <li>Dritter</li>
-    </ol>
-
-    <pre><code class="language-markdown">[OpenAI](https://openai.com)</code></pre>
-    <br><br>
-    <p><a href="https://openai.com">OpenAI</a></p>
-
-    <pre><code class="language-markdown">![Alt Text](https://via.placeholder.com/100)</code></pre>
-    <br><br>
-    <img src="https://via.placeholder.com/100" alt="Alt Text">
-
-    <pre><code class="language-markdown">`Inline Code`</code></pre>
-    <br><br>
-    <p><code>Inline Code</code></p>
-
-    <pre><code class="language-markdown">```
-    Mehrzeiliger Codeblock
-    mit Inhalt
-    ```</code></pre>
-    <br><br>
-    <pre><code>Mehrzeiliger Codeblock
-    mit Inhalt
-    </code></pre>
-
-    <pre><code class="language-markdown">> Dies ist ein Blockzitat</code></pre>
-    <br><br>
-    <blockquote>Dies ist ein Blockzitat</blockquote>
-
-    <pre><code class="language-markdown">---
-    Horizontale Linie</code></pre>
-    <br><br>
-    <hr>
-    <p>Horizontale Linie</p>
-
-    <pre><code class="language-markdown">- [x] Erledigt
-    - [ ] Offen</code></pre>
-    <br><br>
-    <ul>
-      <li><input type="checkbox" checked disabled> Erledigt</li>
-      <li><input type="checkbox" disabled> Offen</li>
-    </ul>
-
-  <section id="MdHeadings" class="mt-4">
-    <h2>Überschriften</h2>
-    <pre><code class="language-markdown">
-      # Überschrift 1
-      ## Überschrift 2
-      ### Überschrift 3
-      #### Überschrift 4
-      ##### Überschrift 5
-      ###### Überschrift 6
-    </code></pre>
-    <h1>Überschrift 1</h1> 
-    <h2>Überschrift 2</h2> 
-    <h3>Überschrift 3</h3> 
-    <h4>Überschrift 4</h4> 
-    <h5>Überschrift 5</h5> 
-    <h6>Überschrift 6</h6> 
-  </section>
-
-  <section id="MdParagraphs" class="mt-4">
-    <h2>Paragraphen</h2>
-    <pre><code class="language-markdown">
-      Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.
-      Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.  
-    </code></pre>
-    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
-    <p>Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.</p>
-  </section>
-
-  <section id="MdLists" class="mt-4">
-    <h2>Listen</h2>
-    <pre><code class="language-markdown">
-    - Liste 1
-      - Unterliste 1.1
-      - Unterliste 1.2
-    - Liste 2
-      - Unterliste 2.1
-      - Unterliste 2.2
-    1. Nummerierte Liste 1
-       1. Unterliste 1.1
-       2. Unterliste 1.2
-    2. Nummerierte Liste 2
-       1. Unterliste 2.1
-       2. Unterliste 2.2
-    </code></pre> 
-    <ul>
-      <li>Liste 1
-        <ul>
-          <li>Unterliste 1.1</li>
-          <li>Unterliste 1.2</li>
-        </ul>
-      </li>
-      <li>Liste 2
-        <ul>
-          <li>Unterliste 2.1</li>
-          <li>Unterliste 2.2</li>
-        </ul>
-      </li> 
-    </ul>
-    <ol>
-      <li>Nummerierte Liste 1
-        <ol>
-          <li>Unterliste 1.1</li>
-          <li>Unterliste 1.2</li>
-        </ol>
-      </li>
-      <li>Nummerierte Liste 2
-        <ol>
-          <li>Unterliste 2.1</li>
-          <li>Unterliste 2.2</li>
-        </ol>
-      </li>
-    </ol>
-  </section>
-
-  <section id="MdCode" class="mt-4">
-    <h2>Code</h2>
-    <pre><code class="language-markdown">
-      `Inline Code`
-      ```python
-      def begruessung(name):
-          print(f"Hallo, {name}!")
-      ```
-    </code></pre>
-    <p><code>Inline Code</code></p>
-    <pre><code class="language-python">
-      def begruessung(name):
-          print(f"Hallo, {name}!")
-      </code></pre> 
-  </section>
-
-  <section id="MdLinks" class="mt-4">
-    <h2>Hyperlinks</h2>
-    <pre><code class="language-markdown">
-      [Linktext](https://example.com)
-    </code></pre>
-    <p><a href="https://example.com">Linktext</a></p>
-  </section>
-
-  <section id="MdImages" class="mt-4">
-    <h2>Bilder</h2>
-    ![Alt-Text](https://example.com/image.jpg)
-    <img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"><br><br>
-    <p><img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"></p>
-  </section>
-</div>
-
-<br><hr><br>
-<div style="height: 150px;"></div>
 
 
   <!-- Vorlagen -->
