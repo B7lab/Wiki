@@ -9,6 +9,8 @@ Wiederkehrende Vereinsveranstaltungen
     - Hacker Mittwoch
 Wärmepumpe
 Dachsanierung
+Sommerfest
+Lagerverwaltung
 Finanzamt
 E-Check
     - Geräteprüfung
