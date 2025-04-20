@@ -5,6 +5,7 @@
   <title>B7 Wiki - Development</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css">
   <style>
     html { scroll-behavior: smooth; }
   </style>
@@ -14,63 +15,94 @@
 <div class="container">
   <h1 class="mb-4">📚 B7 Wiki - Development</h1>
 
-
   <div class="list-group">
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseGettingStarted" role="button" aria-expanded="false" aria-controls="collapseGettingStarted">
-      🦺 Leitsätze um sich besser bei uns zu orientieren
-    🦺 Aufbereitung deiner Entwicklungsumge
+    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseIDE" role="button" aria-expanded="false" aria-controls="collapseIDE">
+      Aufbereitung deiner Entwicklungsumgebung
     </a>
-    <div class="collapse ps-3" id="collapseGettingStarted">
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light">Leben und Leben lassen</li>
-        <li class="list-group-item bg-light">Narrenhände beschmieren und bekleben Tische und Wände</li>
-        <li class="list-group-item bg-light">Teile deine Schüppe</li> 
-        <li class="list-group-item bg-light">Nicht jeder durch links frustrierte ist Rechts</li> 
-        <li class="list-group-item bg-light">Jeder ist willkommen, für sich einzigartig und findet seinen Platz</li>
-    </ul>
-    </div>
-    
-    <a href="#wiki" class="list-group-item list-group-item-action">
-        📖 Wiki Tutorial
-    </a>
-
-    <a href="#cad" class="list-group-item list-group-item-action">
-      🧩 CAD
-    </a>
-
-    <a href="#geraetetester" class="list-group-item list-group-item-action">
-      🛠️ Gerätetester
-    </a>
-
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseSicherheit" role="button" aria-expanded="false" aria-controls="collapseSicherheit">
-      🦺 Arbeitssicherheit
-    </a>
-    <div class="collapse ps-3" id="collapseSicherheit">
+    <div class="collapse ps-3" id="collapseIDE">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light">Schutzkleidung</li>
-        <li class="list-group-item bg-light">Verhalten im Gefahrenfall</li>
-        <li class="list-group-item bg-light">Werkstattordnung</li>
+        <li class="list-group-item bg-light"><a href="#installation">Installation Arbeitsumgebung</a></li>
+        <li class="list-group-item bg-light"><a href="#clone">Wiki klonen, updaten, pushen</a></li>
       </ul>
     </div>
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseProjekte" role="button" aria-expanded="false" aria-controls="collapseProjekte">
-      🧰 Projekte & Aufgaben
+    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseHtml" role="button" aria-expanded="false" aria-controls="collapseHtml">
+      HTML
     </a>
-    <div class="collapse ps-3" id="collapseProjekte">
+    <div class="collapse ps-3" id="collapseHtml">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light">Website</li>
-        <li class="list-group-item bg-light">Bauabschnitt 1</li>
-        <li class="list-group-item bg-light">Grünschnitt</li>
-        <li class="list-group-item bg-light">
-          Routineaufgaben für jedermann
-          <ul class="mt-2 ms-3">
-            <li>Mülltonnen rausstellen</li>
-            <li>Spülmaschine ein-/ausräumen</li>
-            <li>WC Tücher auffüllen</li>
-            <li>Wasser in der Zechenküche auffrischen</li>
+        <li class="list-group-item bg-light"><b>Semantik</b></li>
+        <ul>
+          <li class="list-group-item bg-light"><a href="#headings">Überschriften</a></li>
+          <li class="list-group-item bg-light"><a href="#lists">Listen</a></li>  
+          <li class="list-group-item bg-light"><a href="#tables">Tabellen</a></li>  
+        </ul>
+        <li class="list-group-item bg-light"><b>Code, Links und Images</b></li>
+        <ul>
+          <li class="list-group-item bg-light"><a href="#code">Code</a></li>
+          <li class="list-group-item bg-light"><a href="#links">Links</a></li>
+          <li class="list-group-item bg-light"><a href="#images">Images</a></li>
+        </ul>
+        <li class="list-group-item bg-light"><b>Styles und Scripts</b></li>
+        <ul>
+          <li class="list-group-item bg-light"><a href="#styles">Styles</a></li>
+          <li class="list-group-item bg-light"><a href="#scripst">Scripts</a></li> 
+          <li class="list-group-item bg-light"><a href="#icons">Icons</a></li>
+          <li class="list-group-item bg-light"><a href="#fonts">Fonts</a></li>
+          <li class="list-group-item bg-light"><a href="#cdns">CDNs</a></li>
+        </ul>
+        <li class="list-group-item bg-light"><b><a href="#templates">Templates</b></li>
+    </div>
+
+    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseMD" role="button" aria-expanded="false" aria-controls="collapseMD">
+      Markdown
+    </a>
+    <div class="collapse ps-3" id="collapseMD">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-light"><b>Semantik</b></li>
+          <ul>
+            <li class="list-group-item bg-light"><a href="#cad">Überschriften</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Absätze</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Listen</a></li>  
           </ul>
-        </li>
+        <li class="list-group-item bg-light"><b>Code, Links und Images</b></li>
+        <ul>
+          <li class="list-group-item bg-light"><a href="#cad">Code</a></li>
+          <li class="list-group-item bg-light"><a href="#cad">Links</a></li>
+          <li class="list-group-item bg-light"><a href="#cad">Images</a></li>
+        </ul>
+      </ul>
+    </div>
+
+    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseCollab" role="button" aria-expanded="false" aria-controls="collapseCollab">
+      Kollaboration
+    </a>
+    <div class="collapse ps-3" id="collapseCollab">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-light"><b>Zugang zur Wiki-Bearbeitung</b></li>
+          <ul>
+            <li class="list-group-item bg-light"><a href="#cad">Git Account erstellen</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Anfrage stellen</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Clonen und pushen</a></li>  
+          </ul>
+      </ul>
+    </div>
+
+    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseTemps" role="button" aria-expanded="false" aria-controls="collapseTemps">
+      Vorlagen
+    </a>
+    <div class="collapse ps-3" id="collapseTemps">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-light">Vorlagen</li>
+          <ul>
+            <li class="list-group-item bg-light"><a href="#paper">Paper CSS</a></li>
+            <li class="list-group-item bg-light"><a href="#jqery-ui">JQuery-UI</a></li>
+            <li class="list-group-item bg-light"><a href="#jquery-mobile">JQuery-Mobile</a></li> 
+            <li class="list-group-item bg-light"><a href="#bootstrap">Bootstrap</a></li>
+            <li class="list-group-item bg-light"><a href="#tailwind">Tailwind</a></li>
+            <li class="list-group-item bg-light"><a href="#vanilla">Vanilla Javascript</a></li> 
+          </ul>
       </ul>
     </div>
 
@@ -78,40 +110,220 @@
 
   <hr class="my-5">
 
-  <!-- Inhalte -->
+  <!-- ### Inhalte ### -->
 
-  <section id="wiki" class="mt-4">
-    <h2>Wiki Tutorial</h2>
-    <p>Wie man dieses Wiki verwendet und erweitert.</p>
-    <a href="wiki.md">Zur Einführung der Gestaltung des Wiki (Auszeichnungssprachen und Möglichkeiten der Gestaltung)</a>
+
+
+  <!-- Arbeitsumgebung -->
+
+
+
+  <h2>Github - Sign up</h2>
+  <section id="installation" class="mt-4">
+    <br>
+    <ol>
+      <li>Wenn du noch keinen Account hast, trage hier bitten dein E-Mail Adresse ein und klicke 
+        auf "Sign up for GiHub", ansonsten Logge dich mit deinen Zugangsdaten ein.</li><br>
+      <img src="images/github/SignUp.PNG" width="600" alt="Github - Sign up" class="img-fluid"><br><br>
+      
+      <li>Issue eröffnen: „📝 Add me as collaborator“</li><br>  
+      <img src="images/github/Bewerbung.PNG" width="600" alt="Github - Issue" class="img-fluid"> <br><br>
+      <li>Einladung abwarten und annehmen</li>
+
+    </ol>
   </section>
 
-  <section id="cad" class="mt-4">
-    <h2>CAD</h2>
-    <p>Infos zu CAD-Software, Zeichnungen und Formaten.</p>
-    <a href="cad.md">Zum Abschnitt CAD</a>
+  <br><hr><br>
+
+  
+  
+  <h2>Git for Windows</h2>
+  <section id="installation" class="mt-4">
+    <ol>
+      <li>Git for Windows herunterladen <a href="https://git-scm.com/downloads/win">(https://git-scm.com/downloads/win)</a></li>
+      <li>Installieren und munter immer auf weiter klicken, es sind dutzende Male! Noch nie so viele Weiter Buttons geklickt!</li>
+      <li>Wenn Git installiert ist lässt es sich mit einem Rechtsklick in den Ordner und dem Eintrag GitBash here öffnen.</li>
+      <br>
+      <img src="images/github/gfwDown.PNG" width="600" alt="Github - Sign up" class="img-fluid"><br><br>
+      <img src="images/github/gfw.PNG" width="600" alt="Github - Sign up" class="img-fluid"><br><br>
+    </ol>
   </section>
 
-  <section id="geraetetester" class="mt-4">
-    <h2>Gerätetestung / E-Check</h2>
-    <p>Infos zu Testgeräten, Prüfverfahren und Messprotokollen.</p>
-    <a href="cad.md">Zum Abschnitt Gerätetestung</a>
+  <br><hr><br>
+
+
+
+
+  <section id="clone" class="mt-4">
+    <h2>Kollaboration Workflow</h2><br>
+    <ol>
+      <li>Wiki klonen & Feature‑Branch anlegen</li><br>
+      <img src="images/github/clonen.PNG" width="600" alt="Github - Clone" class="img-fluid"><br><br>
+      <ul>
+        <li><i><b><code class="language-javascript">git clone https://github.com/B7lab/Wiki.git</code></b></i></li>
+        <!--<li><b><code class="language-javascript"> checkout -b neues-kapitel</code></b></li><br>-->
+      </ul>
+      <li>Seiten auf den neuesten Stand updaten</li>
+      <ul>
+        <li><code class="language-javascript">git pull</code></li>
+      </ul>   
+      <li>Seiten bearbeiten und aktualisieren</li>
+      <ul>
+        <li><code class="language-javascript">git add .</code></li>
+        <li><code class="language-javascript">git commit -m "Mein Kommentar"</code></li>
+      </ul>
+      <li>Änderungen pushen (Wiki-update Live Schalten)</li>
+      <ul>
+        <li><code class="language-javascript">git push</code></li>  
+      </ul>
+    </ul>
   </section>
 
-  <section id="safety" class="mt-4">
-    <h2>Arbeitssicherheit und Regeln in der Werkstatt</h2>
-    <p>Infos und Einweisungen in Geräte und was zu beachten ist.</p>
-    <a href="safety.md">Zum Abschnitt Arbeitssicherheit</a>
+  <br><hr><br>
+
+ 
+
+
+<!-- HTML -->
+
+
+
+  <h1>HTML5 - Semantik</h1>
+  <section id="headings" class="mt-4">
+    <h2>Überschriften</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <p>P-Tag</p>
+    <a>Hyperreferenz</a>
   </section>
 
-  <section id="projects" class="mt-4">
-    <h2>Eine Übersicht der aktuellen Projekte</h2>
-    <p>Aktuelle und anstehende Projekte</p>
-    <a href="projects.md">Zur Übersicht der aktuellen Projekte</a>
+  <section id="lists" class="mt-4">
+    <h2>Listen</h2>
+
+  </section>
+
+  <section id="tables" class="mt-4">
+    <h2>Tabellen</h2>
+
+  </section>
+
+  <section id="code" class="mt-4">
+    <h2>Code</h2>
+
+  </section>
+
+  <section id="links" class="mt-4">
+    <h2>Hyperlinks</h2>
+
+  </section>
+
+  <section id="images" class="mt-4">
+    <h2>Bilder</h2>
+
+  </section>
+
+  <section id="icons" class="mt-4">
+    <h2>Icons</h2>
+
+  </section>
+
+  <section id="fonts" class="mt-4">
+    <h2>Schriftarten</h2>
+
+  </section>
+
+  <section id="styles" class="mt-4">
+    <h2>CSS - Stylesheets</h2>
+
+  </section>
+
+  <section id="scripts" class="mt-4">
+    <h2>Javascripts</h2>
+
+  </section>
+
+  <section id="cdns" class="mt-4">
+    <h2>CDN - Javascript Frameworks</h2>
+
+  </section>
+
+
+
+  <!-- Markdown -->
+   
+
+
+  <section id="MdHeadings" class="mt-4">
+    <h2>Überschriften</h2>
+
+  </section>
+
+  <section id="MdParagraphs" class="mt-4">
+    <h2>Paragraphen</h2>
+
+  </section>
+
+  <section id="MdLists" class="mt-4">
+    <h2>Listen</h2>
+
+  </section>
+
+  <section id="MdCode" class="mt-4">
+    <h2>Code</h2>
+
+  </section>
+
+  <section id="MdLinks" class="mt-4">
+    <h2>Hyperlinks</h2>
+
+  </section>
+
+  <section id="MdImages" class="mt-4">
+    <h2>Bilder</h2>
+
+  </section>
+
+
+  <!-- Vorlagen -->
+  
+  
+  <h1>Vorlagen</h1>
+  <section id="paper" class="mt-4">
+    <h2>Paper CSS</h2>
+    
+  </section>
+
+  <section id="jquery-ui" class="mt-4">
+    <h2>JQuery-UI</h2>
+    
+  </section>
+
+  <section id="jquery-mobile" class="mt-4">
+    <h2>JQuery-Mobile</h2>
+    
+  </section>
+
+  <section id="bootstrap" class="mt-4">
+    <h2>Bootstrap</h2>
+    
+  </section>
+
+  <section id="tailwind" class="mt-4">
+    <h2>Tailwind</h2>
+    
+  </section>
+
+  <section id="vanilla" class="mt-4">
+    <h2>Vanilla Javascript</h2>
+    
   </section>
 
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
 </body>
 </html>
