@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Template</title>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- :contentReference[oaicite:0]{index=0} -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto py-6 px-4">
+      <h1 class="text-3xl font-bold">Meine Tailwind-Seite</h1>
+    </div>
+  </header>
+
+  <!-- Hauptbereich -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero / Einführung -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Willkommen!</h2>
+      <p class="mb-4">Dies ist ein einfaches Template mit Tailwind CSS.</p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+        Klick mich
+      </button>
+    </section>
+
+    <!-- Karten-Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">Card 1</h3>
+        <p>Inhalt der ersten Karte.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">Card 2</h3>
+        <p>Inhalt der zweiten Karte.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">Card 3</h3>
+        <p>Inhalt der dritten Karte.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="container mx-auto py-4 px-4 text-center text-gray-600">
+      &copy; 2025 Mein Projekt
+    </div>
+  </footer>
+
+</body>
+</html>

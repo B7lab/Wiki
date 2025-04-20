@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery UI Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery UI CSS -->
+  <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+  > <!-- :contentReference[oaicite:0]{index=0} -->
+
+  <!-- Optional: eigenes Styling -->
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    .widget { margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <h1>jQuery UI Demo</h1>
+
+  <!-- Datepicker-Widget -->
+  <div class="widget">
+    <label for="datepicker">Datum wählen:</label>
+    <input type="text" id="datepicker">
+  </div>
+
+  <!-- Accordion-Widget -->
+  <div class="widget" id="accordion">
+    <h3>Abschnitt 1</h3>
+    <div>
+      <p>Inhalt für Abschnitt 1.</p>
+    </div>
+    <h3>Abschnitt 2</h3>
+    <div>
+      <p>Inhalt für Abschnitt 2.</p>
+    </div>
+    <h3>Abschnitt 3</h3>
+    <div>
+      <p>Inhalt für Abschnitt 3.</p>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+  ></script> <!-- :contentReference[oaicite:1]{index=1} -->
+
+  <!-- jQuery UI -->
+  <script
+    src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+  ></script> <!-- :contentReference[oaicite:2]{index=2} -->
+
+  <!-- Initialisierung der Widgets -->
+  <script>
+    $(function() {
+      // Datepicker aktivieren
+      $("#datepicker").datepicker();
+
+      // Accordion aktivieren
+      $("#accordion").accordion({
+        heightStyle: "content"
+      });
+    });
+  </script>
+</body>
+</html>
