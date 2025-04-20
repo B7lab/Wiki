@@ -8,17 +8,41 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css">
   <style>
     html { scroll-behavior: smooth; }
+    h4 {
+      color: darkorange;
+    }
+    #gray {
+      background-color: lightgray;
+      padding: 1rem;
+      border-radius: 5px;
+    } 
+    #blue {
+      background-color: lightblue;
+      padding: 1rem;
+      border-radius: 5px;
+    } 
+    #red {
+      background-color: lightgoldenrodyellow;
+      padding: 1rem;
+      border-radius: 5px;
+    } 
+    #green {
+      background-color: lightgreen;
+      padding: 1rem;
+      border-radius: 5px;
+    } 
   </style>
 </head>
-<body class="p-4 bg-light">
+<body class="p-4 bg-dark">
 
 <div class="container">
-  <h1 class="mb-4">📚 B7 Wiki - Development</h1>
+  <h1 class="mb-4" style="color: lightgray;">📚 B7 Wiki - Development</h1>
+  <div style="height: 150px;"></div>
 
   <div class="list-group">
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseIDE" role="button" aria-expanded="false" aria-controls="collapseIDE">
-      Aufbereitung deiner Entwicklungsumgebung
+    <a class="list-group-item list-group-item-action" id="gray" data-bs-toggle="collapse" href="#collapseIDE" role="button" aria-expanded="false" aria-controls="collapseIDE">
+      <h5>Aufbereitung deiner Entwicklungsumgebung</h5>
     </a>
     <div class="collapse ps-3" id="collapseIDE">
       <ul class="list-group list-group-flush">
@@ -27,8 +51,8 @@
       </ul>
     </div>
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseHtml" role="button" aria-expanded="false" aria-controls="collapseHtml">
-      HTML
+    <a class="list-group-item list-group-item-action" id="blue" data-bs-toggle="collapse" href="#collapseHtml" role="button" aria-expanded="false" aria-controls="collapseHtml">
+      <h5>Html 5</h5>
     </a>
     <div class="collapse ps-3" id="collapseHtml">
       <ul class="list-group list-group-flush">
@@ -55,8 +79,8 @@
         <li class="list-group-item bg-light"><b><a href="#templates">Templates</b></li>
     </div>
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseMD" role="button" aria-expanded="false" aria-controls="collapseMD">
-      Markdown
+    <a class="list-group-item list-group-item-action" id="green" data-bs-toggle="collapse" href="#collapseMD" role="button" aria-expanded="false" aria-controls="collapseMD">
+      <h5>Markdown</h5>
     </a>
     <div class="collapse ps-3" id="collapseMD">
       <ul class="list-group list-group-flush">
@@ -75,22 +99,8 @@
       </ul>
     </div>
 
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseCollab" role="button" aria-expanded="false" aria-controls="collapseCollab">
-      Kollaboration
-    </a>
-    <div class="collapse ps-3" id="collapseCollab">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light"><b>Zugang zur Wiki-Bearbeitung</b></li>
-          <ul>
-            <li class="list-group-item bg-light"><a href="#cad">Git Account erstellen</a></li>
-            <li class="list-group-item bg-light"><a href="#cad">Anfrage stellen</a></li>
-            <li class="list-group-item bg-light"><a href="#cad">Clonen und pushen</a></li>  
-          </ul>
-      </ul>
-    </div>
-
-    <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseTemps" role="button" aria-expanded="false" aria-controls="collapseTemps">
-      Vorlagen
+    <a class="list-group-item list-group-item-action" id="red" data-bs-toggle="collapse" href="#collapseTemps" role="button" aria-expanded="false" aria-controls="collapseTemps">
+      <h5>Vorlagen</h5>
     </a>
     <div class="collapse ps-3" id="collapseTemps">
       <ul class="list-group list-group-flush">
@@ -107,6 +117,7 @@
     </div>
 
   </div>
+  <div style="height: 800px;"></div>
 
   <hr class="my-5">
 
@@ -117,8 +128,9 @@
   <!-- Arbeitsumgebung -->
 
 
-
-  <h2>Github - Sign up</h2>
+<div id="gray">
+  <h1>Github</h1>
+  <h4>Sign up und Kolaboration</h4>
   <section id="installation" class="mt-4">
     <br>
     <ol>
@@ -128,7 +140,7 @@
       
       <li>Issue eröffnen: „📝 Add me as collaborator“</li><br>  
       <img src="images/github/Bewerbung.PNG" width="600" alt="Github - Issue" class="img-fluid"> <br><br>
-      <li>Einladung abwarten und annehmen</li>
+      <li>Einladung abwarten und annehmen (Es kann durchaus mal ein paar Tage dauern, also bitte etwas Geduld!</li>
 
     </ol>
   </section>
@@ -137,7 +149,7 @@
 
   
   
-  <h2>Git for Windows</h2>
+  <h4>Git for Windows</h4>
   <section id="installation" class="mt-4">
     <ol>
       <li>Git for Windows herunterladen <a href="https://git-scm.com/downloads/win">(https://git-scm.com/downloads/win)</a></li>
@@ -155,7 +167,7 @@
 
 
   <section id="clone" class="mt-4">
-    <h2>Kollaboration Workflow</h2><br>
+    <h4>Kollaboration Workflow</h4><br>
     <ol>
       <li>Wiki klonen & Feature‑Branch anlegen</li><br>
       <img src="images/github/clonen.PNG" width="600" alt="Github - Clone" class="img-fluid"><br><br>
@@ -180,149 +192,873 @@
   </section>
 
   <br><hr><br>
-
+</div>
+<div style="height: 150px;"></div>
  
 
 
 <!-- HTML -->
 
 
-
+<div id="blue">
   <h1>HTML5 - Semantik</h1>
   <section id="headings" class="mt-4">
-    <h2>Überschriften</h2>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <p>P-Tag</p>
-    <a>Hyperreferenz</a>
+    <h4>Überschriften</h4><br><br><br>
+    <pre><code class="language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre><h1>Heading 1</h1><br>
+    <pre><code class="language-html">&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre><h2>Heading 2</h2><br>
+    <pre><code class="language-html">&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre><h3>Heading 3</h3><br>
+    <pre><code class="language-html">&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre><h4>Heading 4</h4><br>
+    <pre><code class="language-html">&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre><h5>Heading 5</h5><br><br>
+    <h4>Text</h4><br><br>
+    <pre><code class="language-html">&lt;p&gt;Dies ist ein Absatz.&lt;/p&gt;</code></pre><p>Dies ist ein Absatz.</p><br><br>
+    <h4>Hypelink</h4><br><br>
+    <pre><code class="language-html">&lt;a href=&quot;https://example.com&quot;&gt;Hyper-Link&lt;/a&gt;</code></pre><a href="https://example.com">Hyper-Link</a><br><br><br>
+    <h4>Fett und kursiv</h4><br><br>
+    <pre><code class="language-html">&lt;b&gt;Fetter Text&lt;/b&gt;</code></pre><b>Fetter Text</b><br><br>
+    <pre><code class="language-html">&lt;i&gt;Kursiver Text&lt;/i&gt;</code></pre><i>Kursiver Text</i><br><br>
   </section>
+
+  <hr>
+
+  <style>.ora { color: orange; } </style>
+  <section id="semantics" class="mt-4">
+    <h4>Semantische Elemente</h4><br><br>
+
+
+    <pre><code class="language-html">
+      &lt;header&gt;
+        …Kopfbereich mit Logo, Navigation o. Ä.…
+      &lt;/header&gt;
+      
+      &lt;nav&gt;
+        …Hauptnavigation oder Seitennavigation…
+      &lt;/nav&gt;
+      
+      &lt;main&gt;
+        …Hauptinhalt der Seite…
+      &lt;/main&gt;
+      
+      &lt;section&gt;
+        …Themenbereich oder Kapitel innerhalb von &lt;main&gt;…
+      &lt;/section&gt;
+      
+      &lt;article&gt;
+        …Eigenständiger Inhalt, z. B. Blog‑Eintrag oder News‑Post…
+      &lt;/article&gt;
+      
+      &lt;aside&gt;
+        …Randnotizen, Sidebar‑Inhalte oder ergänzende Infos…
+      &lt;/aside&gt;
+      
+      &lt;footer&gt;
+        …Fußbereich mit Copyright, Links, Kontakt…
+      &lt;/footer&gt;
+      
+      &lt;figure&gt;
+        …Medien‑Container, z. B. Bild oder Diagramm…
+        &lt;figcaption&gt;…Bildunterschrift…&lt;/figcaption&gt;
+      &lt;/figure&gt;
+      
+      &lt;details&gt;
+        &lt;summary&gt;…Überschrift/Demo…&lt;/summary&gt;
+        …ausklappbarer Inhalt…
+      &lt;/details&gt;
+      
+      &lt;div&gt;
+        …generischer Container ohne spezielle Semantik…
+      &lt;/div&gt;
+      </code></pre>
+  </section>
+
+  <br><hr><br>
 
   <section id="lists" class="mt-4">
-    <h2>Listen</h2>
+    <h4>Listen</h4><br><br>
+      
+    <!-- Ungeordnete Liste -->
 
+    <pre><code class="language-html">
+      &lt;ul&gt;<br>
+        &lt;li&gt;Apfel&lt;/li&gt;<br>
+        &lt;li&gt;Banane&lt;/li&gt;<br>
+        &lt;li&gt;Kirsche&lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+    </code></pre>
+    <br>
+    <ul>
+      <li>Apfel</li>
+      <li>Banane</li>
+      <li>Kirsche</li>
+    </ul>
+
+
+    <!-- Geordnete Liste -->
+    
+    <pre><code class="language-html">
+      &lt;ol&gt;
+        &lt;li&gt;Erster Schritt&lt;/li&gt;
+        &lt;li&gt;Zweiter Schritt&lt;/li&gt;
+        &lt;li&gt;Dritter Schritt&lt;/li&gt;
+      &lt;/ol&gt;
+    </code></pre>
+    <br>
+    <ol>
+      <li>Erster Schritt</li>
+      <li>Zweiter Schritt</li>
+      <li>Dritter Schritt</li>
+    </ol>
+      
   </section>
+
+  <br><hr><br>
 
   <section id="tables" class="mt-4">
-    <h2>Tabellen</h2>
-
+    <h4>Tabellen</h4>
+    <pre><code class="language-html">
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Alter&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Anna&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Ben&lt;/td&gt;
+            &lt;td&gt;34&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+      </code></pre><br><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Alter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anna</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Ben</td>
+            <td>34</td>
+          </tr>
+        </tbody>
+      </table>
+      
   </section>
+
+  <br><hr><br>
 
   <section id="code" class="mt-4">
-    <h2>Code</h2>
-
+    <h4>Code (Beispiel in python)</h4>
+    <pre><code class="language-html">
+      &lt;pre&gt;&lt;code class="language-python"&gt;
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      
+      begruessung("Welt")
+      &lt;/code&gt;&lt;/pre&gt;
+    </code></pre>
+    <br><br>
+    <pre>
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      
+      begruessung("Welt")
+    </pre>
+    <br><br>        
   </section>
 
-  <section id="links" class="mt-4">
-    <h2>Hyperlinks</h2>
-
-  </section>
+  <br><hr><br>
 
   <section id="images" class="mt-4">
-    <h2>Bilder</h2>
-
+    <h4>Bilder</h4>
+    <pre><code class="language-html">
+      &lt;img src=&quot;https://example.com/image.jpg&quot; alt=&quot;Beschreibung des Bildes&quot;&gt;
+    </code></pre><br><br> 
+    <img src="images/Example.jpg" alt="Beschreibung des Bildes" width="150" class="img-fluid"><br><br>
   </section>
+
+  <br><hr><br>
 
   <section id="icons" class="mt-4">
-    <h2>Icons</h2>
-
+    <h4>Icons</h4>
+    <pre><code class="language-html">
+      &lt;!-- Font Awesome CDN einbinden --&gt;
+      &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"&gt;
+      
+      &lt;!-- Beispiel-Icons --&gt;
+      &lt;i class="fas fa-home"&gt;&lt;/i&gt; Startseite
+      &lt;i class="fas fa-envelope"&gt;&lt;/i&gt; Kontakt
+      &lt;i class="fas fa-user"&gt;&lt;/i&gt; Profil
+      </code></pre>
+      <br><br>
+      <!-- Font Awesome live einbinden fürs Beispiel --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <i class="fas fa-home"></i> Startseite
+      <i class="fas fa-envelope"></i> Kontakt
+      <i class="fas fa-user"></i> Profil
   </section>
+
+  <br><hr><br>
 
   <section id="fonts" class="mt-4">
-    <h2>Schriftarten</h2>
-
+    <h4>Schriftarten</h4>
+    <pre><code class="language-html">
+      &lt;!-- Google Fonts Einbindung --&gt;
+      &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"&gt;
+      &lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet"&gt;
+      &lt;link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"&gt;
+      
+      &lt;style&gt;
+        .roboto {
+          font-family: 'Roboto', sans-serif;
+        }
+        .playfair {
+          font-family: 'Playfair Display', serif;
+        }
+        .pixel {
+          font-family: 'Press Start 2P', monospace;
+        }
+      &lt;/style&gt;
+      
+      &lt;p class="roboto"&gt;Dies ist Roboto – eine moderne Sans-Serif Schrift.&lt;/p&gt;
+      &lt;p class="playfair"&gt;Dies ist Playfair Display – elegant und serif.&lt;/p&gt;
+      &lt;p class="pixel"&gt;Dies ist Press Start 2P – Retro-Vibes im Pixel-Look!&lt;/p&gt;
+      </code></pre>
+      <br><br>
+      <!-- Fonts live eingebunden --> <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <style> .roboto { font-family: 'Roboto', sans-serif; } .playfair { font-family: 'Playfair Display', serif; } .pixel { font-family: 'Press Start 2P', monospace; font-size: 0.75rem; } </style> <p class="roboto">Dies ist Roboto – eine moderne Sans-Serif Schrift.</p> <p class="playfair">Dies ist Playfair Display – elegant und serif.</p> <p class="pixel">Dies ist Press Start 2P – Retro-Vibes im Pixel-Look!</p>
   </section>
+
+  <br><hr><br>
 
   <section id="styles" class="mt-4">
-    <h2>CSS - Stylesheets</h2>
+    <h4>CSS - Stylesheets</h4>
+    <pre><code class="language-html">
+      &lt;!-- Bootstrap 5 CSS über CDN einbinden --&gt;
+      &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+      
+      &lt;!-- Beispielnutzung: Button --&gt;
+      &lt;button class="btn btn-primary"&gt;Klick mich&lt;/button&gt;
+      </code></pre>
+      <br><br>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <button class="btn btn-primary mt-2">Klick mich</button>
 
   </section>
+
+  <br><hr><br>
 
   <section id="scripts" class="mt-4">
-    <h2>Javascripts</h2>
+    <h4>Javascripts</h4>
+    <pre><code class="language-html">
+    &lt;!-- JavaScript von CDN (hier: jQuery) --&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.7.1.min.js"&gt;&lt;/script&gt;
 
+    &lt;!-- Eigener Inline-Scriptblock --&gt;
+    &lt;script&gt;
+      $(document).ready(function() {
+        $('#gruss').text('Hallo Welt!');
+      });
+    &lt;/script&gt;
+
+    &lt;p id="gruss"&gt;Wird ersetzt...&lt;/p&gt;
+    </code></pre>
+    <br><br>
+    <!-- jQuery einbinden --> <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <script> $(document).ready(function () { $('#gruss').text('Hallo Welt!'); }); </script> <p id="gruss">Wird ersetzt...</p>
   </section>
+
+  <br><hr><br>
 
   <section id="cdns" class="mt-4">
-    <h2>CDN - Javascript Frameworks</h2>
-
+    <h4>CDN - Frameworks</h4>
+    <h5>CSS</h5>
+    <pre><code class="language-html">
+      &lt;!-- 📄 PaperCSS --&gt;
+      &lt;link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"&gt;
+      
+      &lt;!-- 🎨 jQuery UI CSS --&gt;
+      &lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"&gt;
+      
+      &lt;!-- 📱 jQuery Mobile CSS --&gt;
+      &lt;link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"&gt;
+      
+      &lt;!-- 🧩 Bootstrap 4 CSS --&gt;
+      &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+      
+      &lt;!-- 🌀 Tailwind CSS (via CDN) --&gt;
+      &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+      </code></pre>
+      <br>
+      <h5>JavaScript</h5>
+      <pre><code class="language-html">
+        &lt;!-- 📄 PaperCSS benötigt kein eigenes JS --&gt;
+        
+        &lt;!-- 🎨 jQuery UI JS (jQuery Voraussetzung!) --&gt;
+        &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"&gt;&lt;/script&gt;
+        
+        &lt;!-- 📱 jQuery Mobile JS (jQuery Voraussetzung!) --&gt;
+        &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"&gt;&lt;/script&gt;
+        
+        &lt;!-- 🧩 Bootstrap 4 JS (benötigt Popper.js & jQuery) --&gt;
+        &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+        
+        &lt;!-- 🌀 Tailwind benötigt kein JS (optional AlpineJS usw.) --&gt;
+        &lt;!-- Beispiel: AlpineJS --&gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer&gt;&lt;/script&gt;
+      </code></pre>
+      <br>
   </section>
 
+  <br><hr><br>
+
+</div>
+<div style="height: 150px;"></div>
+
+<br><hr><br>
 
 
   <!-- Markdown -->
-   
 
+
+<div id="green">
+  <h1>Markdown</h1>
+  <section id="MdHeadings" class="mt-4">  
+   
+    <pre><code class="language-markdown">Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</code></pre>
+    <br><br>
+    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
+
+    <pre><code class="language-markdown">**Fett** und *Kursiv*</code></pre>
+    <br><br>
+    <p><strong>Fett</strong> und <em>Kursiv</em></p>
+
+    <pre><code class="language-markdown">~~Durchgestrichen~~</code></pre>
+    <br><br>
+    <p><del>Durchgestrichen</del></p>
+
+    <h2>Listen</h2>
+    <pre><code class="language-markdown">- Punkt 1
+    - Punkt 2
+      - Unterpunkt</code></pre>
+    <br><br>
+    <ul>
+      <li>Punkt 1</li>
+      <li>Punkt 2
+        <ul>
+          <li>Unterpunkt</li>
+        </ul>
+      </li>
+    </ul>
+
+    <pre><code class="language-markdown">1. Erster
+    2. Zweiter
+    3. Dritter</code></pre>
+    <br><br>
+    <ol>
+      <li>Erster</li>
+      <li>Zweiter</li>
+      <li>Dritter</li>
+    </ol>
+
+    <pre><code class="language-markdown">[OpenAI](https://openai.com)</code></pre>
+    <br><br>
+    <p><a href="https://openai.com">OpenAI</a></p>
+
+    <pre><code class="language-markdown">![Alt Text](https://via.placeholder.com/100)</code></pre>
+    <br><br>
+    <img src="https://via.placeholder.com/100" alt="Alt Text">
+
+    <pre><code class="language-markdown">`Inline Code`</code></pre>
+    <br><br>
+    <p><code>Inline Code</code></p>
+
+    <pre><code class="language-markdown">```
+    Mehrzeiliger Codeblock
+    mit Inhalt
+    ```</code></pre>
+    <br><br>
+    <pre><code>Mehrzeiliger Codeblock
+    mit Inhalt
+    </code></pre>
+
+    <pre><code class="language-markdown">> Dies ist ein Blockzitat</code></pre>
+    <br><br>
+    <blockquote>Dies ist ein Blockzitat</blockquote>
+
+    <pre><code class="language-markdown">---
+    Horizontale Linie</code></pre>
+    <br><br>
+    <hr>
+    <p>Horizontale Linie</p>
+
+    <pre><code class="language-markdown">- [x] Erledigt
+    - [ ] Offen</code></pre>
+    <br><br>
+    <ul>
+      <li><input type="checkbox" checked disabled> Erledigt</li>
+      <li><input type="checkbox" disabled> Offen</li>
+    </ul>
 
   <section id="MdHeadings" class="mt-4">
     <h2>Überschriften</h2>
-
+    <pre><code class="language-markdown">
+      # Überschrift 1
+      ## Überschrift 2
+      ### Überschrift 3
+      #### Überschrift 4
+      ##### Überschrift 5
+      ###### Überschrift 6
+    </code></pre>
+    <h1>Überschrift 1</h1> 
+    <h2>Überschrift 2</h2> 
+    <h3>Überschrift 3</h3> 
+    <h4>Überschrift 4</h4> 
+    <h5>Überschrift 5</h5> 
+    <h6>Überschrift 6</h6> 
   </section>
 
   <section id="MdParagraphs" class="mt-4">
     <h2>Paragraphen</h2>
-
+    <pre><code class="language-markdown">
+      Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.
+      Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.  
+    </code></pre>
+    <p>Ein einfacher Absatz folgt hier einfach nach einer Leerzeile.</p>
+    <p>Ein weiterer Absatz folgt hier einfach nach einer Leerzeile.</p>
   </section>
 
   <section id="MdLists" class="mt-4">
     <h2>Listen</h2>
-
+    <pre><code class="language-markdown">
+    - Liste 1
+      - Unterliste 1.1
+      - Unterliste 1.2
+    - Liste 2
+      - Unterliste 2.1
+      - Unterliste 2.2
+    1. Nummerierte Liste 1
+       1. Unterliste 1.1
+       2. Unterliste 1.2
+    2. Nummerierte Liste 2
+       1. Unterliste 2.1
+       2. Unterliste 2.2
+    </code></pre> 
+    <ul>
+      <li>Liste 1
+        <ul>
+          <li>Unterliste 1.1</li>
+          <li>Unterliste 1.2</li>
+        </ul>
+      </li>
+      <li>Liste 2
+        <ul>
+          <li>Unterliste 2.1</li>
+          <li>Unterliste 2.2</li>
+        </ul>
+      </li> 
+    </ul>
+    <ol>
+      <li>Nummerierte Liste 1
+        <ol>
+          <li>Unterliste 1.1</li>
+          <li>Unterliste 1.2</li>
+        </ol>
+      </li>
+      <li>Nummerierte Liste 2
+        <ol>
+          <li>Unterliste 2.1</li>
+          <li>Unterliste 2.2</li>
+        </ol>
+      </li>
+    </ol>
   </section>
 
   <section id="MdCode" class="mt-4">
     <h2>Code</h2>
-
+    <pre><code class="language-markdown">
+      `Inline Code`
+      ```python
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      ```
+    </code></pre>
+    <p><code>Inline Code</code></p>
+    <pre><code class="language-python">
+      def begruessung(name):
+          print(f"Hallo, {name}!")
+      </code></pre> 
   </section>
 
   <section id="MdLinks" class="mt-4">
     <h2>Hyperlinks</h2>
-
+    <pre><code class="language-markdown">
+      [Linktext](https://example.com)
+    </code></pre>
+    <p><a href="https://example.com">Linktext</a></p>
   </section>
 
   <section id="MdImages" class="mt-4">
     <h2>Bilder</h2>
-
+    ![Alt-Text](https://example.com/image.jpg)
+    <img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"><br><br>
+    <p><img src="https://via.placeholder.com/100" alt="Alt-Text" width="100" class="img-fluid"></p>
   </section>
+</div>
+
+<br><hr><br>
+<div style="height: 150px;"></div>
 
 
   <!-- Vorlagen -->
+
   
-  
+
+  <div id="red">
   <h1>Vorlagen</h1>
   <section id="paper" class="mt-4">
-    <h2>Paper CSS</h2>
-    
+    <h4>Paper CSS</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Paper.css Template&lt;/title&gt;
+      
+        &lt;!-- Paper.css via unpkg CDN --&gt;
+        &lt;link
+          rel="stylesheet"
+          href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+        &gt; &lt;!-- :contentReference[oaicite:0]{index=0} --&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;div class="paper container"&gt;
+          &lt;!-- Header mit Breadcrumbs --&gt;
+          &lt;header class="header"&gt;
+            &lt;h1&gt;Meine Paper.css Seite&lt;/h1&gt;
+            &lt;nav&gt;
+              &lt;ul class="breadcrumbs"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Start&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Über&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          &lt;/header&gt;
+      
+          &lt;!-- Hauptbereich --&gt;
+          &lt;main&gt;
+            &lt;section&gt;
+              &lt;h2&gt;Willkommen!&lt;/h2&gt;
+              &lt;p&gt;Dies ist ein einfaches Template mit &lt;strong&gt;Paper.css&lt;/strong&gt;.&lt;/p&gt;
+              &lt;button class="btn"&gt;Klick mich&lt;/button&gt;
+            &lt;/section&gt;
+      
+            &lt;!-- Beispiel-Card --&gt;
+            &lt;section class="card"&gt;
+              &lt;h3&gt;Karte&lt;/h3&gt;
+              &lt;p&gt;Ein Beispiel für eine Card-Komponente.&lt;/p&gt;
+            &lt;/section&gt;
+          &lt;/main&gt;
+      
+          &lt;!-- Footer --&gt;
+          &lt;footer&gt;
+            &lt;p&gt;&copy; 2025 Mein Projekt&lt;/p&gt;
+          &lt;/footer&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+      <a href="templates/paper.html" class="btn btn-primary mt-2" download>Paper CSS Template</a>
   </section>
 
   <section id="jquery-ui" class="mt-4">
-    <h2>JQuery-UI</h2>
-    
+    <h4>JQuery-UI</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;jQuery UI Template&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+      
+        &lt;!-- jQuery UI CSS --&gt;
+        &lt;link
+          rel="stylesheet"
+          href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+        &gt; &lt;!-- :contentReference[oaicite:0]{index=0} --&gt;
+      
+        &lt;!-- Optional: eigenes Styling --&gt;
+        &lt;style&gt;
+          body { font-family: sans-serif; padding: 2rem; }
+          .widget { margin-top: 1.5rem; }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      
+        &lt;h1&gt;jQuery UI Demo&lt;/h1&gt;
+      
+        &lt;!-- Datepicker-Widget --&gt;
+        &lt;div class="widget"&gt;
+          &lt;label for="datepicker"&gt;Datum wählen:&lt;/label&gt;
+          &lt;input type="text" id="datepicker"&gt;
+        &lt;/div&gt;
+      
+        &lt;!-- Accordion-Widget --&gt;
+        &lt;div class="widget" id="accordion"&gt;
+          &lt;h3&gt;Abschnitt 1&lt;/h3&gt;
+          &lt;div&gt;
+            &lt;p&gt;Inhalt für Abschnitt 1.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;Abschnitt 2&lt;/h3&gt;
+          &lt;div&gt;
+            &lt;p&gt;Inhalt für Abschnitt 2.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;Abschnitt 3&lt;/h3&gt;
+          &lt;div&gt;
+            &lt;p&gt;Inhalt für Abschnitt 3.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      
+        &lt;!-- jQuery --&gt;
+        &lt;script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+        &gt;&lt;/script&gt; &lt;!-- :contentReference[oaicite:1]{index=1} --&gt;
+      
+        &lt;!-- jQuery UI --&gt;
+        &lt;script
+          src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        &gt;&lt;/script&gt; &lt;!-- :contentReference[oaicite:2]{index=2} --&gt;
+      
+        &lt;!-- Initialisierung der Widgets --&gt;
+        &lt;script&gt;
+          $(function() {
+            // Datepicker aktivieren
+            $("#datepicker").datepicker();
+      
+            // Accordion aktivieren
+            $("#accordion").accordion({
+              heightStyle: "content"
+            });
+          });
+        &lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+      <a href="templates/jquery-ui.html" class="btn btn-primary mt-2" download>JQuery-UI Template</a>
+      
   </section>
 
   <section id="jquery-mobile" class="mt-4">
-    <h2>JQuery-Mobile</h2>
-    
+    <h4>JQuery-Mobile</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;jQuery Mobile Template&lt;/title&gt;
+      
+        &lt;!-- jQuery Mobile CSS --&gt;
+        &lt;link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css"
+        &gt; &lt;!-- :contentReference[oaicite:0]{index=0} --&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      
+        &lt;!-- „Seite“ im jQuery-Mobile‑Stil --&gt;
+        &lt;div data-role="page" id="home"&gt;
+      
+          &lt;div data-role="header"&gt;
+            &lt;h1&gt;Meine jQM Seite&lt;/h1&gt;
+          &lt;/div&gt;
+      
+          &lt;div data-role="content"&gt;
+            &lt;p&gt;Willkommen auf meiner mobilen Seite!&lt;/p&gt;
+            &lt;a href="#dialog" data-role="button"&gt;Dialog öffnen&lt;/a&gt;
+          &lt;/div&gt;
+      
+          &lt;div data-role="footer"&gt;
+            &lt;h4&gt;&copy; 2025&lt;/h4&gt;
+          &lt;/div&gt;
+      
+        &lt;/div&gt;
+      
+        &lt;!-- Ein einfacher Dialog --&gt;
+        &lt;div data-role="page" id="dialog"&gt;
+          &lt;div data-role="header"&gt;
+            &lt;h1&gt;Dialog&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div data-role="content"&gt;
+            &lt;p&gt;Das ist ein Inline‑Dialog.&lt;/p&gt;
+            &lt;a href="#home" data-role="button" data-rel="back"&gt;Zurück&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      
+        &lt;!-- jQuery Core --&gt;
+        &lt;script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+        &gt;&lt;/script&gt; &lt;!-- :contentReference[oaicite:1]{index=1} --&gt;
+      
+        &lt;!-- jQuery Mobile JS --&gt;
+        &lt;script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"
+        &gt;&lt;/script&gt; &lt;!-- :contentReference[oaicite:2]{index=2} --&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </code></pre>
+    <a href="templates/jquery-mobile.html" class="btn btn-primary mt-2" download>JQuery-Mobile Template</a>
+      
   </section>
 
   <section id="bootstrap" class="mt-4">
-    <h2>Bootstrap</h2>
-    
+    <h4>Bootstrap</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;&lt;!-- Das hier erscheint auf dem Tab im Browser --&gt;&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+        &lt;style&gt;
+          /* Platz für Stylesheets speziell nur für dieses Dokument */
+          html { scroll-behavior: smooth; }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body class="p-4 bg-light"&gt;
+      
+      &lt;div class="container"&gt;
+      
+          &lt;!-- Hier kommt dein Inhalt rein --&gt;
+      
+      &lt;/div&gt;
+      
+      &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+      &lt;script&gt;
+        // Hier kannst du JavaScript hinzufügen, wenn nötig
+        // Beispiel: console.log("Hello, World!");
+      &lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+      <a href="templates/bootstrap.html" class="btn btn-primary mt-2" download>Bootstrap-5 Template</a>
+      
   </section>
 
   <section id="tailwind" class="mt-4">
-    <h2>Tailwind</h2>
-    
+    <h4>Tailwind</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Tailwind CSS Template&lt;/title&gt;
+      
+        &lt;!-- Tailwind CSS Play CDN --&gt;
+        &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt; &lt;!-- :contentReference[oaicite:0]{index=0} --&gt;
+      &lt;/head&gt;
+      &lt;body class="bg-gray-100 text-gray-900"&gt;
+      
+        &lt;!-- Header --&gt;
+        &lt;header class="bg-white shadow"&gt;
+          &lt;div class="container mx-auto py-6 px-4"&gt;
+            &lt;h1 class="text-3xl font-bold"&gt;Meine Tailwind-Seite&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/header&gt;
+      
+        &lt;!-- Hauptbereich --&gt;
+        &lt;main class="container mx-auto px-4 py-8"&gt;
+          &lt;!-- Hero / Einführung --&gt;
+          &lt;section class="mb-8"&gt;
+            &lt;h2 class="text-2xl font-semibold mb-4"&gt;Willkommen!&lt;/h2&gt;
+            &lt;p class="mb-4"&gt;Dies ist ein einfaches Template mit Tailwind CSS.&lt;/p&gt;
+            &lt;button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"&gt;
+              Klick mich
+            &lt;/button&gt;
+          &lt;/section&gt;
+      
+          &lt;!-- Karten-Grid --&gt;
+          &lt;section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"&gt;
+            &lt;div class="bg-white rounded-lg shadow p-6"&gt;
+              &lt;h3 class="text-xl font-semibold mb-2"&gt;Card 1&lt;/h3&gt;
+              &lt;p&gt;Inhalt der ersten Karte.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="bg-white rounded-lg shadow p-6"&gt;
+              &lt;h3 class="text-xl font-semibold mb-2"&gt;Card 2&lt;/h3&gt;
+              &lt;p&gt;Inhalt der zweiten Karte.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="bg-white rounded-lg shadow p-6"&gt;
+              &lt;h3 class="text-xl font-semibold mb-2"&gt;Card 3&lt;/h3&gt;
+              &lt;p&gt;Inhalt der dritten Karte.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+        &lt;/main&gt;
+      
+        &lt;!-- Footer --&gt;
+        &lt;footer class="bg-white border-t"&gt;
+          &lt;div class="container mx-auto py-4 px-4 text-center text-gray-600"&gt;
+            &copy; 2025 Mein Projekt
+          &lt;/div&gt;
+        &lt;/footer&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </code></pre>
+    <a href="templates/tailwind.html" class="btn btn-primary mt-2" download>Tailwind Template</a>
+      
   </section>
 
   <section id="vanilla" class="mt-4">
-    <h2>Vanilla Javascript</h2>
-    
+    <h4>Vanilla Javascript</h4>
+    <pre><code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="de"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;Vanilla JavaScript Template&lt;/title&gt;
+      
+        &lt;!-- Eigene CSS-Datei verlinken --&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+      
+      &lt;/head&gt;
+      &lt;body&gt;
+      
+        &lt;!-- Hauptbereich --&gt;
+        &lt;div class="container"&gt;
+          &lt;h1&gt;Willkommen zu meinem Vanilla JavaScript Template&lt;/h1&gt;
+          &lt;p&gt;Dies ist eine einfache HTML-Seite mit Vanilla JavaScript.&lt;/p&gt;
+      
+          &lt;button id="myButton"&gt;Klick mich&lt;/button&gt;
+        &lt;/div&gt;
+      
+        &lt;!-- Eigene JavaScript-Datei verlinken --&gt;
+        &lt;script src="main.js"&gt;&lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+      <a href="templates/vanilla.html" class="btn btn-primary mt-2" download>Vanilla-Javascript Template</a>
+      
   </section>
 
 </div>
-
+</div>
+</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
 </body>
