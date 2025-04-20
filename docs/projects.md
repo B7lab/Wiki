@@ -9,6 +9,7 @@ Wiederkehrende Vereinsveranstaltungen
     - Hacker Mittwoch
 Wärmepumpe
 Dachsanierung
+Finanzamt
 E-Check
     - Geräteprüfung
     - Prüfprotokolle
