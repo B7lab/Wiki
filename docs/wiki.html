@@ -36,9 +36,14 @@
 <body class="p-4 bg-dark">
 
 <div class="container">
-  <h1 class="mb-4" style="color: lightgray;">📚 B7 Wiki - Development</h1>
-  <div style="height: 150px;"></div>
-
+  <div style="text-align: center;">
+    <h1 class="mb-4" style="color: lightgray;">📚 B7 Wiki - Development</h1>
+    <p style="color: lightgray;">Der einfache Weg ist mit Markdown, schnell verfasst, grob übersichtlich, fein.</p>
+    <p style="color: lightgray;">Wer etwas mehr Power benötigt setzt auf Html5.</p>
+    <p style="color: lightgray;">Richtig Fancy wird's mit eigenem CSS oder sogar Frameworks wie Bootstrap.</p>
+    <p style="color: lightgray;">Javascript und coole Animationen sind die Königsdisziplin! Ich verweise z.B. auf <a href="https://johnpolacek.github.io/superscrollorama/">SuperScrollorama</a></p>
+    <div style="height: 100px;"></div>
+  </div>
   <div class="list-group">
 
     <a class="list-group-item list-group-item-action" id="gray" data-bs-toggle="collapse" href="#collapseIDE" role="button" aria-expanded="false" aria-controls="collapseIDE">
@@ -48,6 +53,26 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item bg-light"><a href="#installation">Installation Arbeitsumgebung</a></li>
         <li class="list-group-item bg-light"><a href="#clone">Wiki klonen, updaten, pushen</a></li>
+      </ul>
+    </div>
+
+    <a class="list-group-item list-group-item-action" id="green" data-bs-toggle="collapse" href="#collapseMD" role="button" aria-expanded="false" aria-controls="collapseMD">
+      <h5>Markdown</h5>
+    </a>
+    <div class="collapse ps-3" id="collapseMD">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-light"><b>Semantik</b></li>
+          <ul>
+            <li class="list-group-item bg-light"><a href="#cad">Überschriften</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Absätze</a></li>
+            <li class="list-group-item bg-light"><a href="#cad">Listen</a></li>  
+          </ul>
+        <li class="list-group-item bg-light"><b>Code, Links und Images</b></li>
+        <ul>
+          <li class="list-group-item bg-light"><a href="#cad">Code</a></li>
+          <li class="list-group-item bg-light"><a href="#cad">Links</a></li>
+          <li class="list-group-item bg-light"><a href="#cad">Images</a></li>
+        </ul>
       </ul>
     </div>
 
@@ -77,26 +102,6 @@
           <li class="list-group-item bg-light"><a href="#cdns">CDNs</a></li>
         </ul>
         <li class="list-group-item bg-light"><b><a href="#templates">Templates</b></li>
-    </div>
-
-    <a class="list-group-item list-group-item-action" id="green" data-bs-toggle="collapse" href="#collapseMD" role="button" aria-expanded="false" aria-controls="collapseMD">
-      <h5>Markdown</h5>
-    </a>
-    <div class="collapse ps-3" id="collapseMD">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light"><b>Semantik</b></li>
-          <ul>
-            <li class="list-group-item bg-light"><a href="#cad">Überschriften</a></li>
-            <li class="list-group-item bg-light"><a href="#cad">Absätze</a></li>
-            <li class="list-group-item bg-light"><a href="#cad">Listen</a></li>  
-          </ul>
-        <li class="list-group-item bg-light"><b>Code, Links und Images</b></li>
-        <ul>
-          <li class="list-group-item bg-light"><a href="#cad">Code</a></li>
-          <li class="list-group-item bg-light"><a href="#cad">Links</a></li>
-          <li class="list-group-item bg-light"><a href="#cad">Images</a></li>
-        </ul>
-      </ul>
     </div>
 
     <a class="list-group-item list-group-item-action" id="red" data-bs-toggle="collapse" href="#collapseTemps" role="button" aria-expanded="false" aria-controls="collapseTemps">
